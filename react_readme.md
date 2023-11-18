@@ -31,5 +31,10 @@
   -- const root = ReactDOM.createRoot(document.getElementById("root))
 
 - # How to render a react component/element in root?
+
   -- root.render(<REACT_COMPONENT_OR_REACT_ELEMENT>)
   -- this render method is given to the root object by the react-dom library.
+
+- # Code Bundler (parcel)
+  - it is installed as a dev dependency
+  - npm i -D parcel
