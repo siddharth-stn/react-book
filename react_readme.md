@@ -27,7 +27,7 @@
 
   -- root is an HTML Element which is used as a root to allow react components to render inside it.
   -- root is created by the react-dom library createRoot method.
-  -- import ReactDOM from "react-dom"
+  -- import React DOM from "react-dom/client"
   -- const root = ReactDOM.createRoot(document.getElementById("root))
 
 - # How to render a react component/element in root?
