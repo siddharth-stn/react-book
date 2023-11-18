@@ -35,6 +35,36 @@
   -- root.render(<REACT_COMPONENT_OR_REACT_ELEMENT>)
   -- this render method is given to the root object by the react-dom library.
 
+- # Folder and file structure
+
+  - core files index.html, styles.css, App.js and .gitignore
+  - App.js is the root of react
+  - make folder src/components, and src/utils
+
+- # index.html
+
+  - use emmet ! for basic scaffolding of html
+  - then make a <div id="root"></div> in the body of html
+  - below this div in body, make a <script src="./App.js" type="module"></script>
+  - type="module" is used in script tag as we will be using the import statement in our code.
+
 - # Code Bundler (parcel)
+
   - it is installed as a dev dependency
   - npm i -D parcel
+
+  - # How to start parcel
+    - in the package.json, delete the "main": "..."
+    - add this command in the script section
+      - "start": "npx parcel index.html"
+      - npx executes the package, while npm installs a package
+    - now in the terminal npm start, or npm run start
+    - for ** Production Build ** we need npm parcel build index.html
+    - we can add this command in the script section also as,
+      - "build": "npx parcel build index.html"
+      - to run this command, in the terminal type npm run build and press enter
+    - browserslist:
+      - in package.json add(example),
+        - "browserslist": {"last 2 chrome versions"}
+      - there is a website https://browsersl.ist/ which is helpful to set browserslist
+      - browserslist works when build is used
