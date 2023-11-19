@@ -88,7 +88,17 @@
   - hooks can only be used inside a functional component
   - when the set function of the useState() is called, it will make react to re-render the component
 
+  - # useEffect() hook
+    - useEffect(() => {}, []), takes in two arguments when called
+    - The first argument is a callback function
+    - The second argument is an array, called as a dependency array in react terms
+    - This dependency array controls the calling of the first argument, ie. the callback function
+    - When the dependency array is empty then the callback function(first argument) will be called as soon as the UI rendering is completed
+
 - # How to make routes?
 
 - # Important Points
   - Whenever a state variable updates react will re-render that component in which that state variable is being used
+  - # When to make an api call?
+    - as soon as the page loads make api call and then render the UI
+    - as soon as the page loads render the UI and then make api call and after the data from api call is returned then render the UI with api data
