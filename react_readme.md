@@ -84,17 +84,25 @@
 
 - # What are react hooks?
 
+  - They are kind of utility functions
+  - Two main hooks used most of the time in react coding are useState() and useEffect().
   - import {useState, useEffect} from 'react' (/_ they are named export _/)
   - hooks can only be used inside a functional component
-  - Whenever a state variable updates react will re-render(reconciliation cycle) that component in which that state variable is being used
-  - when the set function of the useState() is called, it will make react to re-render the component
+
+  - # useState() hook
+
+    - Whenever a state variable updates react will re-render(reconciliation cycle) that component in which that state variable is being used
+    - when the set function of the useState() is called, it will make react to re-render the component
+    - Never create useState() inside if - else, for loop or inside a function other than the functional component
 
   - # useEffect() hook
     - useEffect(() => {}, []), takes in two arguments when called
     - The first argument is a callback function
     - The second argument is an array, called as a dependency array in react terms
     - This dependency array controls the calling of the first argument, ie. the callback function
-    - When the dependency array is empty then the callback function(first argument) will be called as soon as the UI rendering is completed
+    - When dependency array is not given as an argument then useEffect() callback is called **everytime** the component is rendered
+    - **but when a dependency array is put and the dependency array then callback function is called just once when the component is rendered for the first time**
+    - if there is something put inside the dependency array then the callback function is called when that thing is updated
 
 - # How to make routes?
 
