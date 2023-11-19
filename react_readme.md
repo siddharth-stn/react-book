@@ -104,21 +104,63 @@
     - **but when a dependency array is put and the dependency array then callback function is called just once when the component is rendered for the first time**
     - if there is something put inside the dependency array then the callback function is called when that thing is updated
 
-- # How to make routes in react?
+- # App.js with routes in react?
 
-  - we will use npm i react-router-dom (/_ if not already installed _/)
+  - import ReactDOM from 'react-dom/client'
+  - import Header from '../components/Header'
+  - import Main from '../components/Main'
+  - import Error from '../components/Error'
+
+  - const App = () => {
+    - return (
+      - <div>
+        - <Header />
+        - <Outlet />
+      - </div>
+    - )
+  - }
+
   - # Routing Configuration
 
+    - we will use npm i react-router-dom (/_ if not already installed _/)
     - In App.js
-    - import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+    - import {createBrowserRouter, RouterProvider, Outlet} from 'react-router-dom'
+
+    - ...
+    - ...
+    - ... previous code
+
     - const appRouter = createBrowserRouter
     - ([
+
       - {
+
         - path: "/",
-        - element: <Some_Component/>
+        - element: <App/>
+        - children: [
+
+          - {
+            - path: "/",
+            - element: <SOME_COMPONENT/>
+          - },
+          - {
+            - path: "/SOME_OTHER_PATH"
+            - element: <SOME_OTHER_COMPONENT/>
+          - }
+
+        - ],
+        - errorElement: <Error/>
+
       - }
+
     - ])
-    - now, root.render(<RouterProvider router = {appRouter}/ >)
+    - const root = ReactDOM.createRoot(document.getElementById("root"))
+    - root.render(<RouterProvider router = {appRouter}/ >)
+
+- # Link Element in react
+
+  - Never use <a></a> tag in react as it makes the whole app to re-render
+  -
 
 - # Important Points
   - Whenever a state variable updates react will re-render that component in which that state variable is being used
