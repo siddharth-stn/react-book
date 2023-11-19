@@ -88,3 +88,6 @@
   - hooks can only be used inside a functional component
 
 - # How to make routes?
+
+- # Important Points
+  - Whenever a state variable updates react will re-render that component in which that state variable is being used
