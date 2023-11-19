@@ -86,6 +86,7 @@
 
   - import {useState, useEffect} from 'react' (/_ they are named export _/)
   - hooks can only be used inside a functional component
+  - Whenever a state variable updates react will re-render that component in which that state variable is being used
   - when the set function of the useState() is called, it will make react to re-render the component
 
   - # useEffect() hook
