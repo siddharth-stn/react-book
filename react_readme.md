@@ -104,7 +104,21 @@
     - **but when a dependency array is put and the dependency array then callback function is called just once when the component is rendered for the first time**
     - if there is something put inside the dependency array then the callback function is called when that thing is updated
 
-- # How to make routes?
+- # How to make routes in react?
+
+  - we will use npm i react-router-dom (/_ if not already installed _/)
+  - # Routing Configuration
+
+    - In App.js
+    - import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+    - const appRouter = createBrowserRouter
+    - ([
+      - {
+        - path: "/",
+        - element: <Some_Component/>
+      - }
+    - ])
+    - now, root.render(<RouterProvider router = {appRouter}/ >)
 
 - # Important Points
   - Whenever a state variable updates react will re-render that component in which that state variable is being used
