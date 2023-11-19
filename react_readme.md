@@ -59,8 +59,6 @@
   - below this div in body, make a <script src="./App.js" type="module"></script>
   - type="module" is used in script tag as we will be using the import statement in our code.
 
-- # App.js
-
 - # Code Bundler (parcel)
 
   - it is installed as a dev dependency
@@ -160,7 +158,8 @@
 - # Link Element in react
 
   - Never use <a></a> tag in react as it makes the whole app to re-render
-  -
+  - import {Link} from 'react-router-dom'
+  - <Link to="/SOME_PATH"><li>SOME_TEXT</li></Link>
 
 - # Important Points
   - Whenever a state variable updates react will re-render that component in which that state variable is being used
