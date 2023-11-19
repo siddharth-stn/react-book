@@ -82,10 +82,11 @@
       - there is a website https://browsersl.ist/ which is helpful to set browserslist
       - browserslist works when build is used
 
-- # How to import react Hooks into your file
+- # What are react hooks?
 
   - import {useState, useEffect} from 'react' (/_ they are named export _/)
   - hooks can only be used inside a functional component
+  - when the set function of the useState() is called, it will make react to re-render the component
 
 - # How to make routes?
 
