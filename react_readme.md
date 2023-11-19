@@ -8,7 +8,7 @@
 - # How to create an Element in react?
 
   - 1. Using the createElement method from react library
-       - import React from "react"
+       - import React from "react" (/_ it is a default export _/)
        - const Heading = React.createElement("h1", {}, "Hello World!")
        - {} object is used to give attributes
        - eg:- const heading = React.createElement("h1", {id:"something"}, "Hello World!")
@@ -36,7 +36,7 @@
 
   - root is an HTML Element which is used as a root to allow react components to render inside it.
   - root is created by the react-dom library createRoot method.
-  - import React DOM from "react-dom/client"
+  - import React DOM from "react-dom/client" (/_ this is a default export _/)
   - const root = ReactDOM.createRoot(document.getElementById("root))
 
 - # How to render a react component/element in root?
@@ -81,5 +81,10 @@
         - "browserslist": {"last 2 chrome versions"}
       - there is a website https://browsersl.ist/ which is helpful to set browserslist
       - browserslist works when build is used
+
+- # How to import react Hooks into your file
+
+  - import {useState, useEffect} from 'react' (/_ they are named export _/)
+  - hooks can only be used inside a functional component
 
 - # How to make routes?
