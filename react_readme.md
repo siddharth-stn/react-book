@@ -40,6 +40,8 @@
   - core files index.html, styles.css, App.js and .gitignore
   - App.js is the root of react
   - make folder src/components, and src/utils
+  - inside components we will make the react functional components in .jsx file
+    - each of these files will be exported as a component and then imported and rendered in App.js
 
 - # index.html
 
@@ -68,3 +70,5 @@
         - "browserslist": {"last 2 chrome versions"}
       - there is a website https://browsersl.ist/ which is helpful to set browserslist
       - browserslist works when build is used
+
+- # How to make routes?
