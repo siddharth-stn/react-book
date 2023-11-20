@@ -104,7 +104,11 @@
     - if there is something put inside the dependency array then the callback function is called when that thing is updated
 
   - # useParams()
+
     - const {SOME_PARAMETER} = useParams()
+
+  - # useRouteError()
+    - const err = useRouteError()
 
 - # App.js with routes in react?
 
