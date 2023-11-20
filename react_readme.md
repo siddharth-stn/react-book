@@ -171,9 +171,13 @@
 
 - # class based components
 
-  - class About () {
-    - constructor() {
-      - super()
+  - import React from 'react'
+  - class About extends React.Component {
+    - constructor(props) {
+      - super(props)
+    - }
+    - render() {
+      - return (<SOME_JSX_TAG>{this.props.SOME_FIELD}<SOME_JSX_TAG>)
     - }
   - }
 
