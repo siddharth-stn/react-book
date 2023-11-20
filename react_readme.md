@@ -94,6 +94,7 @@
     - Never create useState() inside if - else, for loop or inside a function other than the functional component
 
   - # useEffect() hook
+
     - useEffect(() => {}, []), takes in two arguments when called
     - The first argument is a callback function
     - The second argument is an array, called as a dependency array in react terms
@@ -101,6 +102,9 @@
     - When dependency array is not given as an argument then useEffect() callback is called **everytime** the component is rendered
     - **but when a dependency array is put and the dependency array then callback function is called just once when the component is rendered for the first time**
     - if there is something put inside the dependency array then the callback function is called when that thing is updated
+
+  - # useParams()
+    - const {SOME_PARAMETER} = useParams()
 
 - # App.js with routes in react?
 
