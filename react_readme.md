@@ -169,6 +169,14 @@
   - import {Link} from 'react-router-dom'
   - <Link to="/SOME_PATH"><li>SOME_TEXT</li></Link>
 
+- # class based components
+
+  - class About () {
+    - constructor() {
+      - super()
+    - }
+  - }
+
 - # Important Points
   - Whenever a state variable updates react will re-render that component in which that state variable is being used
   - # When to make an api call?
