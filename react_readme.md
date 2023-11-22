@@ -181,6 +181,25 @@
     - }
   - }
 
+  - # Creating state variables in class based components
+    - import React from 'react'
+    - class About extends React.Component {
+      - constructor(props) {
+        - super(props)
+        - this.state = {
+          - count: 0,
+        - }
+      - }
+      - render() {
+        - return (
+          - <div>
+            - <SOME_JSX_TAG>{this.props.SOME_FIELD}<SOME_JSX_TAG>
+            - <SOME_OTHER_JSX_TAG>{this.state.count}<SOME_OTHER_JSX_TAG>
+          - </div>
+        - )
+      - }
+    - }
+
 - # Important Points
   - Whenever a state variable updates react will re-render that component in which that state variable is being used
   - # When to make an api call?
