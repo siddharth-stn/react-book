@@ -182,23 +182,37 @@
   - }
 
   - # Creating state variables in class based components
+
     - import React from 'react'
     - class About extends React.Component {
       - constructor(props) {
         - super(props)
         - this.state = {
-          - count: 0,
+          - count_one: 1,
+          - count_two: 2,
         - }
       - }
       - render() {
         - return (
           - <div>
             - <SOME_JSX_TAG>{this.props.SOME_FIELD}<SOME_JSX_TAG>
-            - <SOME_OTHER_JSX_TAG>{this.state.count}<SOME_OTHER_JSX_TAG>
+            - <SOME_OTHER_JSX_TAG>{this.state.count_one}<SOME_OTHER_JSX_TAG>
+            - <SOME_OTHER_OTHER_JSX_TAG>{this.state.count_two}<SOME_OTHER_OTHER_JSX_TAG>
           - </div>
         - )
       - }
     - }
+
+    - # How to update the variables created in the state object in class based components?
+      - using this.setState() function anywhere in the class
+      - it takes in an object which will update the variable
+      - if you want to update the count_one variable in the above example
+      - then,
+      - in the this.setState() function,
+      - this.setState({
+        - count_one: this.state.count_one + 1,
+      - })
+      - for an example, we may use this.setState() function inside onClick={() => {this.setState({...update definition here...})}} method of a button element
 
 - # Important Points
   - Whenever a state variable updates react will re-render that component in which that state variable is being used
