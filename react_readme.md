@@ -213,6 +213,7 @@
         - count_one: this.state.count_one + 1,
       - })
       - for an example, we may use this.setState() function inside onClick={() => {this.setState({...update definition here...})}} method of a button element
+      - **NEVER UPDATE THE STATE VARIABLE DIRECTELY**
 
 - # Important Points
   - Whenever a state variable updates react will re-render that component in which that state variable is being used
