@@ -215,7 +215,7 @@
       - })
       - for an example, we may use this.setState() function inside onClick={() => {this.setState({...update definition here...})}} method of a button element
       - **NEVER UPDATE THE STATE VARIABLE DIRECTELY**
-      - **whenever setState() is called, it causes an update on the react component (updating phase) - refer the react lifecycle diagram for more info**
+      - **whenever setState() is called and finished running, it triggers an update on the react component (updating phase) - refer the react lifecycle diagram for more info**
 
 - # How is a class component loaded?
 
@@ -241,6 +241,15 @@
       - this state variable with the data can be used in the jsx like any other state variable as explained above
 
   - **See React lifecycle method diagram in react.wojtek to understand above explanation**
+
+- # componentDidUpdate() method of class based components
+
+  - after the component is finished updating
+  - this method is not called after the mounting cycle
+
+- # componentWillUnmount() method of class based components
+
+  - Just before the removal of a component from the DOM this method is called
 
 - # Important Points
   - Whenever a state variable updates react will re-render that component in which that state variable is being used
