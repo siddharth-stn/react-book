@@ -251,9 +251,13 @@
 - # componentWillUnmount() method of class based components
 
   - Just before the removal of a component from the DOM this method is called
+  - it is used to do cleanup like removal of timeouts and intervals
 
 - # Important Points
+
   - Whenever a state variable updates react will re-render that component in which that state variable is being used
+  - Cleanup in the useEffect() is done by returning the clearInterval or clearTimeout in the callback
+
   - # When to make an api call?
     - as soon as the page loads make api call and then render the UI
     - as soon as the page loads render the UI and then make api call and after the data from api call is returned then render the UI with api data
