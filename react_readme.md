@@ -225,7 +225,7 @@
 
   - this method is called when the component and its children are completely mounted in the UI/DOM (render() method has completed running)
   - this method is mostly used to make an api call similar to functional components where we make an api call in useEffect(()=>{}, [])
-  - useEffect() hook with an empty dependency array [] in functional components works similar to compenentDidMount() method of class based components
+  - useEffect() hook with an empty dependency array [] in functional components works similar to compenentDidMount() method of class based components, _although we should never compare hooks to the lifecycle methods_
   - **In case of multiple children with componentDidMount() method in the same component**
 
     - If there are multiple children with componentDidMount() then the calling of componentDidMount() will be batched together and both child render will be called before the calling of the componentDidMount()
