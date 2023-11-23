@@ -264,6 +264,10 @@
   - Whenever a state variable updates react will re-render that component in which that state variable is being used
   - Cleanup in the useEffect() is done by returning the clearInterval or clearTimeout in the callback
 
+  - # What is single resposibility principle?
+
+    - In react when one component does only single work
+
   - # When to make an api call?
     - as soon as the page loads make api call and then render the UI
     - as soon as the page loads render the UI and then make api call and after the data from api call is returned then render the UI with api data
