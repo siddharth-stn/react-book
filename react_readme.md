@@ -270,5 +270,9 @@
     - In react when one component does only single work
 
   - # When to make an api call?
+
     - as soon as the page loads make api call and then render the UI
     - as soon as the page loads render the UI and then make api call and after the data from api call is returned then render the UI with api data
+
+  - # lazy loading/chunking/code splitting/dynamic bundling
+  - splitting the code into smaller bundles logically
