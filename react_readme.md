@@ -225,6 +225,21 @@
   - this method is called when the component and its children are completely mounted in the UI/DOM (render() method has completed running)
   - this method is mostly used to make an api call similar to functional components where we make an api call in useEffect(()=>{}, [])
   - useEffect() hook with an empty dependency array [] in functional components works similar to compenentDidMount() method of class based components
+  - **In case of multiple children with componentDidMount() method in the same component**
+
+    - If there are multiple children with componentDidMount() then the calling of componentDidMount() will be batched together and both child render will be called before the calling of the componentDidMount()
+    - actually when there are two or more children then the render phase will be batched together and the commit phase of the children will be batched together, this happens as the commit phase (DOM update on the UI) is the most expensive(ram consuming/time taking) process
+
+  - # How to call an api from componentDidMount()?
+
+    - first step is to make the componentDidMount() an async function, eg:- async componentDidMount() {}
+    - in the definition of this method make the api call using fetch()
+    - # using the data that you get from the api
+      - create a state variable in this.state and give it some dummy data
+      - then using this.setState(), update the data from api to the state variable
+      - this state variable with the data can be used in the jsx like any other state variable as explained above
+
+  - **See React lifecycle method diagram in react.wojtek to understand above explanation**
 
 - # Important Points
   - Whenever a state variable updates react will re-render that component in which that state variable is being used
