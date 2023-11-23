@@ -220,7 +220,7 @@
 
   - When a class component is loaded, then the constructor of the class is called first then the render method is called.
 
-- # componentDidMOunt() method
+- # componentDidMount() method
 
   - this method is called when the component and its children are completely mounted in the UI/DOM
 
