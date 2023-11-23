@@ -204,6 +204,7 @@
     - }
 
     - # How to update the variables created in the state object in class based components?
+
       - using this.setState() function anywhere in the class
       - it takes in an object which will update the variable
       - if you want to update the count_one variable in the above example
@@ -214,6 +215,14 @@
       - })
       - for an example, we may use this.setState() function inside onClick={() => {this.setState({...update definition here...})}} method of a button element
       - **NEVER UPDATE THE STATE VARIABLE DIRECTELY**
+
+- # How is a class component loaded?
+
+  - When a class component is loaded, then the constructor of the class is called first then the render method is called.
+
+- # componentDidMOunt() method
+
+  - this method is called when the component and its children are completely mounted in the UI/DOM
 
 - # Important Points
   - Whenever a state variable updates react will re-render that component in which that state variable is being used
