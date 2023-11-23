@@ -253,6 +253,12 @@
   - Just before the removal of a component from the DOM this method is called
   - it is used to do cleanup like removal of timeouts and intervals
 
+- # Creating custom hooks
+
+  - hooks are nothing but utility functions that can sometimes return something if needed
+  - eg:- we can create a custom hook that fetches the data and returns the data when called
+  - its a best practice to create the customs hooks file in utils folder and the filename of customs should start with the word 'use' to differentiate it from other type of utility files
+
 - # Important Points
 
   - Whenever a state variable updates react will re-render that component in which that state variable is being used
