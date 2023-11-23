@@ -241,6 +241,7 @@
       - this state variable with the data can be used in the jsx like any other state variable as explained above
 
   - **See React lifecycle method diagram in react.wojtek to understand above explanation**
+  - _componentDidMount() is called only after the initial render of the component(mounting cycle)_, and after every update(subsequent render) of the component the componentDidUpdate() will be called (updating cycle)
 
 - # componentDidUpdate() method of class based components
 
