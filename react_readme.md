@@ -274,5 +274,14 @@
     - as soon as the page loads make api call and then render the UI
     - as soon as the page loads render the UI and then make api call and after the data from api call is returned then render the UI with api data
 
-  - # lazy loading/chunking/code splitting/dynamic bundling
+  - # lazy loading/chunking/code splitting/dynamic bundling/ on demand loading
+
   - splitting the code into smaller bundles logically
+  - when the app becomes large then to make the app work faster we do this
+  - for example we want that grocery page code should load only when demanded (called)
+  - import {lazy, Suspense} from 'react'
+  - const Grocery = lazy(() => import('./Grocery.jsx'))
+  - now wrap the <Grocery /> component within <Suspense> component, like so,
+  - <Suspense fallback= {<SOME_JSX_LIKE_SHIMMER />}>
+    - <Grocery />
+  - </Suspense>
