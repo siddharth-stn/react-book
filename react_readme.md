@@ -222,7 +222,9 @@
 
 - # componentDidMount() method
 
-  - this method is called when the component and its children are completely mounted in the UI/DOM
+  - this method is called when the component and its children are completely mounted in the UI/DOM (render() method has completed running)
+  - this method is mostly used to make an api call similar to functional components where we make an api call in useEffect(()=>{}, [])
+  - useEffect() hook with an empty dependency array [] in functional components works similar to compenentDidMount() method of class based components
 
 - # Important Points
   - Whenever a state variable updates react will re-render that component in which that state variable is being used
