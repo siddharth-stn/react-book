@@ -285,3 +285,7 @@
   - <Suspense fallback= {<SOME_JSX_LIKE_SHIMMER />}>
     - <Grocery />
   - </Suspense>
+
+  - # Higher order components
+    - it is a function that takes a function and returns the function
+    - it enhances the capability of a function before returning it
