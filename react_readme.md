@@ -215,6 +215,7 @@
       - })
       - for an example, we may use this.setState() function inside onClick={() => {this.setState({...update definition here...})}} method of a button element
       - **NEVER UPDATE THE STATE VARIABLE DIRECTELY**
+      - **whenever setState() is called, it causes an update on the react component (updating phase) - refer the react lifecycle diagram for more info**
 
 - # How is a class component loaded?
 
